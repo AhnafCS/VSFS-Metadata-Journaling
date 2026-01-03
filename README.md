@@ -11,3 +11,6 @@ them to their home locations.
 3. Log a change: `./journal create <filename>`
 4. Apply changes: `./journal install`
 5. Verify consistency: `./validator`
+
+
+Disk LayoutThe file system is stored in a static 340 KB disk image (vsfs.img) with the following structure:ComponentBlocksIndex RangeSuperblock10Journal161 - 16Inode Bitmap117Data Bitmap118Inode Table219 - 20Data Blocks6421 - 84Total: 85 blocks (4 KB per block).
