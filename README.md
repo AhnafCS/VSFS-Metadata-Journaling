@@ -13,4 +13,12 @@ them to their home locations.
 5. Verify consistency: `./validator`
 
 
-Disk LayoutThe file system is stored in a static 340 KB disk image (vsfs.img) with the following structure:ComponentBlocksIndex RangeSuperblock10Journal161 - 16Inode Bitmap117Data Bitmap118Inode Table219 - 20Data Blocks6421 - 84Total: 85 blocks (4 KB per block).
+Disk LayoutThe file system is stored in a static 340 KB disk image (vsfs.img) with the following structure:
+Component,Blocks,Index Range
+Superblock,1,0
+Journal,16,1 - 16
+Inode Bitmap,1,17
+Data Bitmap,1,18
+Inode Table,2,19 - 20
+Data Blocks,64,21 - 84
+Total 85 blocks (4 KB per block).
