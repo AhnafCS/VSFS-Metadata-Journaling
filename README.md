@@ -6,8 +6,13 @@ This project ensures crash consistency by logging metadata updates
 them to their home locations.
 
 ## How to Run
-1. Compile the code: `gcc journal.c -o journal -Wall`
-2. Create the FS: `./mkfs`
+1. Build everything: `make`
+2. Initialize the disk: `./mkfs`
 3. Log a change: `./journal create <filename>`
 4. Apply changes: `./journal install`
 5. Verify consistency: `./validator`
+6. Clean up: `make clean`
+
+Shortcut: 
+```bash
+make && ./mkfs && ./journal create testfile && ./journal install && ./validator
