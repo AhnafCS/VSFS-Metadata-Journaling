@@ -13,7 +13,7 @@ them to their home locations.
 5. Verify consistency: `./validator`
 
 
-Disk LayoutThe file system is stored in a static 340 KB disk image (vsfs.img) with the following structure:
+The file system is stored in a static 340 KB disk image (vsfs.img) with the following structure:
 | Component | Blocks | Index | Description |
 | :--- | :--- | :--- | :--- |
 | **Superblock** | 1 | 0 | FS metadata (Magic #, sizes) |
