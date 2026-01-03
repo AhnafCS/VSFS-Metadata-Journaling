@@ -27,8 +27,4 @@ Total 85 blocks (4 KB per block).
 
 Shortcut: 
 ```bash
-<<<<<<< HEAD
 make && ./mkfs && ./journal create testfile && ./journal install && ./validator
-=======
-make && ./mkfs && ./journal create testfile && ./journal install && ./validator
->>>>>>> c1084920be9b236835fd9727bf78afc7102e0c00
