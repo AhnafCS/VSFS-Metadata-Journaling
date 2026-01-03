@@ -1,0 +1,7 @@
+# Binaries
+journal
+mkfs
+validator
+
+# Disk Images
+*.img
